@@ -19,6 +19,13 @@ pnpm install
 php artisan serve
 pnpm dev
 ```
+- dan gunakan user admin untuk masuk
+```json
+{
+    "username" : "admin@gmail.com",
+    "password" : "123456"
+}
+```
 - tidak perlu setup database, karna saya menggunakan sqlite untuk mempermudah pengecekan
 
 - terimakasih

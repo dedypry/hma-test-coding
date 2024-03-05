@@ -32,13 +32,6 @@ export const routes = [
                 }
             },
             {
-                path: 'register',
-                component: () => import('@/pages/register.vue'),
-                meta: {
-                    guestOnly: true
-                }
-            },
-            {
                 path: '/:pathMatch(.*)*',
                 component: () => import('@/pages/[...error].vue'),
             },

@@ -110,16 +110,7 @@ async function login() {
                             <!-- remember me checkbox -->
                             <div
                                 class="d-flex align-center justify-space-between flex-wrap mt-1 mb-4"
-                            >
-                                <VCheckbox
-                                    v-model="form.remember"
-                                    label="Remember me"
-                                />
-
-                                <a class="ms-2 mb-1" href="javascript:void(0)">
-                                    Forgot Password?
-                                </a>
-                            </div>
+                            ></div>
 
                             <!-- login button -->
                             <VBtn
@@ -129,17 +120,6 @@ async function login() {
                             >
                                 Login
                             </VBtn>
-                        </VCol>
-
-                        <!-- create account -->
-                        <VCol cols="12" class="text-center text-base">
-                            <span>New on our platform?</span>
-                            <RouterLink
-                                class="text-primary ms-2"
-                                to="/register"
-                            >
-                                Create an account
-                            </RouterLink>
                         </VCol>
                     </VRow>
                 </VForm>

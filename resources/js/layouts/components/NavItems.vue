@@ -12,7 +12,10 @@ const router = useRouter();
 function logout() {
     http.post("logout").then(({ data }) => {
         notify(data.message);
-        authStore.setUser({});
+        authStore.setUser({
+            user: null,
+            token: "",
+        });
         router.push("/login");
     });
 }

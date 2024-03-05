@@ -5,7 +5,7 @@ import { notify, notifyError } from "@/utils/notify";
 export const useAuthUserStore = defineStore('authStore', {
     state: () => ({
         token: '',
-        user: {},
+        user: null,
         loading: false
     }),
     actions: {
@@ -30,5 +30,8 @@ export const useAuthUserStore = defineStore('authStore', {
             this.loading = false
         },
     },
-    persist: ['token', 'user']
+    persist: {
+        storage: sessionStorage,
+        paths: ['token', 'user'],
+    },
 })
